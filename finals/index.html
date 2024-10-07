@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Tinned Fish</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/rtc0pzc.css">
+</head>
+
+<body>
+    <img id="ring" src="images/ringpull.png" alt="Ring Pull">
+    <div class = "intro">
+        <div class = "title"> All About Tinned Fish </div>
+        <div class = "subtitle">Visualizations by Annie Lee using Rainbow Tomatoes Garden's Tinned Fish Dataset</div>
+    </div>
+    <div class="fishicon">𓆝 𓆟 𓆞𓆝 𓆟 𓆞</div>
+    
+    <div class="subhead1">1. Let's see where most of the tins are from and what fish they have to offer:</div>
+    <div class="subhead2">Hover over the bars to see more fish!</div>
+    <div id="app1"></div>
+    <script type="module" async src="./js/app1.js"></script>
+
+    <!-- <div id="app2"></div>
+    <script type="module" async src="./js/app2.js"></script> -->
+
+    <div class="subhead1">2. And How are These Fish Usually Prepared?</div>
+    <div class="subhead2">Toggle among the top fish types to find out!</div>
+    <div id="buttonContainer"></div>
+    <div id="app4"></div>
+    <script type="module" async src="./js/app4.js"></script>
+
+    <div class="subhead1">3. Here are the Top 10 Brands and their Interquatile Price Range</div>
+    <div class="subhead2">Can you guess which tin costs over $100?</div>
+    <div id="buttonContainer3">
+        <div>Sort by:</div>
+        <button id="buttonSortByDefault">Variety</button>
+        <button id="buttonSortByMedian">Price</button>
+    </div>
+    <div id="app3"></div>
+    <script type="module" async src="./js/app3.js"></script>
+    <script src="./js/script.js"></script>
+    </div>
+</body>
+
+</html>

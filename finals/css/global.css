@@ -1,0 +1,240 @@
+body {
+    background-color: #ebeeec; /* Base color */
+    background-image: linear-gradient(to top, #d8d8d8, #ebeeec 15%);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.fishicon{
+    font-size: 56px;
+    margin-top: 20px; 
+    color: #646464;
+}
+
+
+#ring {
+    width: 15%; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    z-index: -10;
+    left: 30px;
+    top: 30px;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-top: 50px;
+    font-size: 96px; 
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFD700; /* Gold color */
+    line-height: 1.5;
+    -webkit-text-stroke: 4px black; /* Outline effect */
+    text-shadow:
+      4px 4px 0 #000, /* Shadow effect */
+      -1px -1px 0 #000, /* More shadow effect */
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+
+.subtitle {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 28px; 
+    font-family: monotalic-narrow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.subhead1{
+    margin-top: 150px;
+    font-size: 32px; 
+    font-family: monotalic-narrow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+
+.subhead2{
+    margin-top: 10px;
+    font-size: 24px; 
+    font-family: monotalic-narrow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #646464;
+}
+
+
+
+/* App1.js*/
+.tooltip2 {
+    position: absolute;
+    opacity: 0;
+    border: none;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+  }
+
+.tooltip2-text {
+    font-size: 21px;
+    font-family: monotalic-narrow, san-serif;
+    background-color: #ebeeec; /* Set your desired background color here */
+    border-radius: 3px; /* Apply rounded edges to the text if needed */
+}
+
+/* App1.js Tick */
+.axis-tick-label {
+    font-size: 21px;
+    font-family: monotalic-narrow, sans-serif;
+}
+
+
+
+
+/* App4.js*/
+
+#app4 svg {
+    overflow: visible; /* Ensures labels are not clipped */
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.radar-chart-container {
+    background-image: url('images/${fishType}.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+#buttonContainer{
+    margin-top: 50px;
+    margin-bottom: 50px; /* Adjust the margin as needed */
+}
+
+.button {
+    padding: 8px 25px;
+    color: #000;
+    border: none;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 21px; 
+    font-family: monotalic-narrow, sans-serif;
+    font-style: normal;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 1); 
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add easing */
+}
+
+
+/* Hover state */
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Reduced transparency on hover */
+}
+
+
+.legend4{
+    font-size: 21px;
+    font-family: monotalic-narrow, san-serif;
+}
+
+
+/* App3.js */
+
+#buttonContainer3 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#buttonContainer3 div {
+    margin-right: 5px;
+    font-size: 24px; 
+    font-family: monotalic-narrow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333; /* Change text color if needed */
+}
+
+#buttonContainer3 button {
+    padding: 3px 15px;
+    color: #000;
+    border: none;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 21px; 
+    font-family: monotalic-narrow, sans-serif;
+    font-style: normal;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 1); 
+    background-color: #FFD700;
+}
+
+/* Hover state */
+#buttonContainer3 button:hover {
+    background-color: rgba(255, 215, 0, 0.6); /* Reduce transparency on hover */
+}
+
+/* Selected/active state */
+#buttonContainer3 button.active {
+    background-color: #de9f1b; /* Change to red for selected/active state */
+}
+
+/* Outlier Tooltip */
+.tooltip3 {
+    position: absolute;
+    opacity: 0;
+    border: none;
+    padding: 0;
+    text-align: center;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+  }
+
+  .tooltip3-text {
+    font-size: 21px;
+    font-family: monotalic-narrow, san-serif;
+    background-color: #ebeeec; /* Set your desired background color here */
+    border-radius: 5px; /* Apply rounded edges to the text if needed */
+    padding-left: 5px;
+    padding-right: 5px;
+    word-wrap: break-word;
+    width: 200px; /* Adjust width as needed */
+    text-align: center; /* Center text horizontally */
+    margin: 0 auto; /* Center div in the parent element */
+}
+
+.boxtooltip {
+    position: absolute;
+    opacity: 0;
+    border: none;
+    padding: 0;
+    flex-direction: column; /* Stack elements vertically */
+    font-size: 21px;
+    font-family: monotalic-narrow, san-serif;
+    background-color: #ebeeec; 
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px; 
+    margin: 0 auto; 
+  }
