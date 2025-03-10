@@ -35,7 +35,7 @@ d3.csv(datasetURL).then(data => {
   });
 
   // Set up dimensions for the chart
-  const width = 1200;
+  const width = 1000;
   const height = 600;
   const margin = { top: 30, right: 100, bottom: 50, left: 160 };
 
